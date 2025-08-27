@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Research Tool</title>
+    <style>body { font-family: sans-serif; max-width: 600px; margin: 50px auto; }</style>
+</head>
+<body>
+    <h1>Company Research Generator</h1>
+    <form action="/generate" method="post">
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required style="width:100%; padding:8px; margin-bottom:10px;">
+        <label for="ticker">Stock Ticker:</label>
+        <input type="text" id="ticker" name="ticker" required style="width:100%; padding:8px; margin-bottom:10px;">
+        <button type="submit" style="padding:10px 15px;">Generate Report</button>
+    </form>
+</body>
+</html>
