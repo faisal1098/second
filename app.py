@@ -66,7 +66,7 @@ def generate():
 
     prompt = get_master_prompt(company_name, ticker)
 
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
     response = model.generate_content(prompt)
 
     report_html = markdown.markdown(response.text)
